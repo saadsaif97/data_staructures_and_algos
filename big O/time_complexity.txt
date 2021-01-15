@@ -1,0 +1,11 @@
+-----------------------------------------------------
+HOW THE RUN TIME OF FUNCTION GROWS AS THE INPUT GROWS
+THIS RELATION IS CALLED BIG O
+-----------------------------------------------------
+
+simplify the O notations
+
+-- Arithmetic operations are constant
+-- Variable assignment is constant
+-- Accessing the element in array or object is constant
+-- In LOOPS, the complexity id the length of the loop times the complexity of what happens inside the loop

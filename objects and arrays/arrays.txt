@@ -1,0 +1,8 @@
+when you need sorting, fast insertion/access and removal
+
+Arrays
+
+-- access is constant O(1)
+-- insertion and removal from begining rearranges the indices O(n)
+-- insertion and removal at end is constant O(1)
+-- search is O(n)

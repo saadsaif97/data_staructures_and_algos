@@ -1,0 +1,9 @@
+when you don't need the order, objects are the best choice
+
+OBJECTS
+
+-- insertion, removal, access O(1)
+-- search O(n)
+
+-- Object.keys, Object.values, Object.entries == O(n)   because it creates the new array with n items, Object.entries consumes more resorces
+-- hasOwnProperty == O(1)
