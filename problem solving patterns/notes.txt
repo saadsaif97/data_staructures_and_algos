@@ -1,0 +1,72 @@
+ALGORITHM
+-- set of steps to solve a problem
+
+1) Device a plan to solve the problem
+2) Master common problem solving patterns
+
+frequency counter
+two pointer problems
+divide and concure
+
+☻ Understand the problem
+-- state it in your own words
+☻ Explore concrete examples
+-- simple,complex,empty,invalid unit tests
+☻ Break it down
+-- write your stratergy explicitly in comments 
+☻ Solve/simplify
+-- you may skip the difficult part till end
+☻ Look back and refactor
+-- see other people solution to get better
+
+=====================
+== sample examples ==
+=====================
+write a function that returns the sum of each character in string
+__simple examples__
+charCount("aaa") // {a:3}
+charCount("cat") // {c:1, a:1, t:1}
+__complex examples__
+charCount("An ant") // {a:2, n:2, t:1}
+charCount("pa$$w0rd!") // {p:1, a:1, w:1, 0:1, r:1, d:1}
+__empty inputs__
+charCount("") // {}
+__invalid inputs__
+charCount(asd123) // "please enter a valid string"
+===================
+== break it down ==
+===================
+function charCount(str){
+   //return the error if not string
+   //return the error if another empty
+
+   //make object {char:count}
+   //loop through array
+      //if char in str AND is letter/number: enter the key and value = 1 to object
+      //if char in str AND is key in obj: increase the value by one
+      //if char in not letter/number: don't do any thing
+   //return the object
+}
+
+
+
+
+
+
+
+
+
+==============================================================
+♣ restate the problem in your own words
+-- make a function that sums to inputs
+♣ what are th einputs of the problem
+-- ints? floats?
+♣ what are the output of the function
+-- ints? floats? strings?
+♣ can the outputs determined from the inputs
+-- examples provide the sanity checks (unit tests)
+-- start with simple examples then progress to complex ones
+-- explore with empty inputs (edge cases)
+-- explore with invalid inputs
+♣ what are the inportant parts of the problem
+---------------------------------------------------------------
