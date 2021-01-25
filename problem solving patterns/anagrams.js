@@ -34,9 +34,11 @@ console.log(areAnagrams('car', 'rat')) // false
  * -------------------------------------------------------
  */
 
+// these will run due to hoisting
 console.log(anagram('iceman', 'cinema')) // true
 console.log(anagram('anagram', 'naragam')) // true
 console.log(anagram('car', 'rat')) // false
+
 // given solution
 function anagram(one, two) {
   if (one.length != two.length) {
@@ -50,10 +52,11 @@ function anagram(one, two) {
   }
 
   for (const char of two) {
-    // return if not in lookup and remove frequency if seen in two
+    // return if not in lookup or is zero
     if (!lookup[char]) {
       return false
     } else {
+      //remove frequency if seen in two
       lookup[char] -= 1
     }
   }
