@@ -6,11 +6,8 @@ function binary_search(arr, value) {
   while (arr[mid] !== value && left <= mid) {
     console.log(left, mid, right)
     if (arr[mid] == value) return mid
-    if (value < arr[mid]) {
-      right = mid - 1
-    } else {
-      left = mid + 1
-    }
+    if (value < arr[mid]) right = mid - 1
+    else left = mid + 1
     mid = Math.floor((left + right) / 2)
   }
 
